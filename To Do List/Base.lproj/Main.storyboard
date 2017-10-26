@@ -5,7 +5,6 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,8 +27,9 @@
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSK-H7-Dhc">
                                             <rect key="frame" x="8" y="6" width="51" height="31"/>
                                         </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-l1-b72">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-l1-b72">
                                             <rect key="frame" x="65" y="11" width="294" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -37,8 +37,6 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="TSK-H7-Dhc" firstAttribute="leading" secondItem="g1K-0o-fYr" secondAttribute="leading" constant="8" id="Seb-Q9-kmg"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="nLb-l1-b72" secondAttribute="trailing" constant="8" id="XIO-6Q-GNr"/>
-                                        <constraint firstItem="nLb-l1-b72" firstAttribute="leading" secondItem="g1K-0o-fYr" secondAttribute="leadingMargin" constant="8" id="mdD-ad-ocD"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
