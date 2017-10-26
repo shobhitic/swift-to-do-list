@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--To Do List Table View Controller-->
         <scene sceneID="Rga-ws-BJI">
             <objects>
-                <tableViewController id="Kgr-CT-qCB" customClass="MainViewController" sceneMemberID="viewController">
+                <tableViewController id="Kgr-CT-qCB" customClass="ToDoListTableViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2g0-7n-Wvh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
