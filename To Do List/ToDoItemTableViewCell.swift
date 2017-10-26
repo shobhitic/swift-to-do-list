@@ -9,7 +9,9 @@
 import UIKit
 
 class ToDoItemTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var taskNameLabel: UILabel!
+    @IBOutlet weak var taskCompleteSwitch: UISwitch!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

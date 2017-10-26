@@ -41,6 +41,10 @@
                                         <constraint firstItem="nLb-l1-b72" firstAttribute="leading" secondItem="g1K-0o-fYr" secondAttribute="leadingMargin" constant="8" id="mdD-ad-ocD"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="taskCompleteSwitch" destination="TSK-H7-Dhc" id="iIV-M7-HNd"/>
+                                    <outlet property="taskNameLabel" destination="nLb-l1-b72" id="Fem-kK-WH6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
