@@ -16,6 +16,7 @@
 		EE32B4DC1FA228B300890892 /* ToDoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */; };
 		EE32B4DE1FA22B2100890892 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4DD1FA22B2100890892 /* ToDoListItem.swift */; };
 		EE32B4E21FA22E6700890892 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4E11FA22E6700890892 /* ToDoListTableViewController.swift */; };
+		EE32B4E41FA240EC00890892 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4E31FA240EC00890892 /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTableViewCell.swift; sourceTree = "<group>"; };
 		EE32B4DD1FA22B2100890892 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
 		EE32B4E11FA22E6700890892 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
+		EE32B4E31FA240EC00890892 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				EE32B4BB1FA2243A00890892 /* AppDelegate.swift */,
 				EE32B4BD1FA2243A00890892 /* MainViewController.swift */,
 				EE32B4BF1FA2243A00890892 /* Main.storyboard */,
+				EE32B4E31FA240EC00890892 /* AddItemViewController.swift */,
 				EE32B4DD1FA22B2100890892 /* ToDoListItem.swift */,
 				EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */,
 				EE32B4C21FA2243A00890892 /* Assets.xcassets */,
@@ -213,6 +216,7 @@
 				EE32B4DC1FA228B300890892 /* ToDoItemTableViewCell.swift in Sources */,
 				EE32B4DE1FA22B2100890892 /* ToDoListItem.swift in Sources */,
 				EE32B4BC1FA2243A00890892 /* AppDelegate.swift in Sources */,
+				EE32B4E41FA240EC00890892 /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
