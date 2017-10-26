@@ -12,6 +12,8 @@ class ToDoItemTableViewCell: UITableViewCell {
     @IBOutlet weak var taskNameLabel: UILabel!
     @IBOutlet weak var taskCompleteSwitch: UISwitch!
     
+    var task: ToDoListItem?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,6 +23,21 @@ class ToDoItemTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setTask(task: ToDoListItem) {
+        self.task = task
+
+        taskNameLabel.text = task.name
+        taskCompleteSwitch.isOn = task.completed
+        
+        taskCompleteSwitch.addTarget(self, action: #selector(ToDoItemTableViewCell.taskCompleted(completeSwitch:)), for: .valueChanged)
+    }
+    
+    @objc func taskCompleted(completeSwitch: UISwitch) {
+        let isCompelete = completeSwitch.isOn
+        // Do something
+        task?.completed = isCompelete
     }
 
 }

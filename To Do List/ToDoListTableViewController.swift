@@ -48,9 +48,9 @@ class ToDoListTableViewController: UITableViewController {
         // Fetches the appropriate meal for the data source layout.
         let task = tasks[indexPath.row]
         
-        cell.taskNameLabel.text = task.name
-        cell.taskCompleteSwitch.isOn = task.completed
+        cell.setTask(task: task)
         
         return cell
     }
+    
 }
