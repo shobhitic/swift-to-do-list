@@ -10,7 +10,7 @@ import UIKit
 
 class MainViewController: UITableViewController {
     
-    var tasks = [ToDoListItem("Brush Teeth"), ToDoListItem("Take a dump")]()
+    var tasks = [ToDoListItem(name: "Brush Teeth"), ToDoListItem(name: "Take a dump")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
