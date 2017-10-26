@@ -13,6 +13,7 @@
 		EE32B4C31FA2243A00890892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE32B4C21FA2243A00890892 /* Assets.xcassets */; };
 		EE32B4C61FA2243A00890892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE32B4C41FA2243A00890892 /* LaunchScreen.storyboard */; };
 		EE32B4D11FA2243A00890892 /* To_Do_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4D01FA2243A00890892 /* To_Do_ListTests.swift */; };
+		EE32B4DC1FA228B300890892 /* ToDoItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		EE32B4CC1FA2243A00890892 /* To Do ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "To Do ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE32B4D01FA2243A00890892 /* To_Do_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListTests.swift; sourceTree = "<group>"; };
 		EE32B4D21FA2243A00890892 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				EE32B4BB1FA2243A00890892 /* AppDelegate.swift */,
 				EE32B4BD1FA2243A00890892 /* MainViewController.swift */,
 				EE32B4BF1FA2243A00890892 /* Main.storyboard */,
+				EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */,
 				EE32B4C21FA2243A00890892 /* Assets.xcassets */,
 				EE32B4C41FA2243A00890892 /* LaunchScreen.storyboard */,
 				EE32B4C71FA2243A00890892 /* Info.plist */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE32B4BE1FA2243A00890892 /* MainViewController.swift in Sources */,
+				EE32B4DC1FA228B300890892 /* ToDoItemTableViewCell.swift in Sources */,
 				EE32B4BC1FA2243A00890892 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
