@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UITableViewController {
+class MainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
