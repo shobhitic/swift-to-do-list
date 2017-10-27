@@ -27,17 +27,26 @@ class ToDoItemTableViewCell: UITableViewCell {
     
     func setTask(task: ToDoListItem) {
         self.task = task
-
-        taskNameLabel.text = task.name
         taskCompleteSwitch.isOn = task.completed
+        updateLabel()
         
         taskCompleteSwitch.addTarget(self, action: #selector(ToDoItemTableViewCell.taskCompleted(completeSwitch:)), for: .valueChanged)
+    }
+    
+    func updateLabel() {
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: task!.name)
+        
+        if task!.completed {
+            attributeString.addAttribute(NSAttributedStringKey.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        }
+        taskNameLabel.attributedText = attributeString
     }
     
     @objc func taskCompleted(completeSwitch: UISwitch) {
         let isCompelete = completeSwitch.isOn
         // Do something
         task?.updateCompleted(completed: isCompelete)
+        updateLabel()
     }
 
 }
