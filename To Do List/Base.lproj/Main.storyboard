@@ -25,19 +25,29 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSK-H7-Dhc">
-                                            <rect key="frame" x="8" y="6" width="51" height="31"/>
-                                        </switch>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-l1-b72">
-                                            <rect key="frame" x="65" y="11" width="294" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6me-Ry-Kan">
+                                            <rect key="frame" x="8" y="8" width="359" height="27.5"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TSK-H7-Dhc">
+                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="27.5"/>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLb-l1-b72">
+                                                    <rect key="frame" x="57" y="0.0" width="302" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="nLb-l1-b72" secondAttribute="trailing" id="QdN-se-Zwi"/>
+                                            </constraints>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="TSK-H7-Dhc" firstAttribute="leading" secondItem="g1K-0o-fYr" secondAttribute="leading" constant="8" id="FiQ-oM-RRE"/>
+                                        <constraint firstItem="6me-Ry-Kan" firstAttribute="top" secondItem="g1K-0o-fYr" secondAttribute="top" constant="8" id="cT0-v8-ioO"/>
+                                        <constraint firstItem="6me-Ry-Kan" firstAttribute="leading" secondItem="g1K-0o-fYr" secondAttribute="leading" constant="8" id="niw-ub-oAP"/>
+                                        <constraint firstAttribute="trailing" secondItem="6me-Ry-Kan" secondAttribute="trailing" constant="8" id="vNN-bu-5oE"/>
+                                        <constraint firstAttribute="bottom" secondItem="6me-Ry-Kan" secondAttribute="bottom" constant="8" id="wna-ml-29F"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
