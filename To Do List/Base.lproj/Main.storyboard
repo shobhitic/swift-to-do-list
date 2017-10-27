@@ -87,7 +87,11 @@
                         <viewLayoutGuide key="safeArea" id="Wwy-6e-VB8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add a Task" id="4B6-kf-ql8">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bLL-94-br0"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bLL-94-br0">
+                            <connections>
+                                <action selector="cancel:" destination="xXA-yy-yhq" id="ijw-I8-m3D"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="euG-sn-mop"/>
                     </navigationItem>
                 </viewController>
