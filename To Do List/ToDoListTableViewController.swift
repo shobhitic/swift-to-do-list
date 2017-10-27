@@ -9,7 +9,7 @@
 import UIKit
 
 class ToDoListTableViewController: UITableViewController {
-    var tasks = ToDoList.allTasks()
+    var tasks = [ToDoListItem]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,9 @@ class ToDoListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        for task in ToDoList.allTasks() {
+            tasks.append(task)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,4 +56,14 @@ class ToDoListTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func unwindToTaskList(sender: UIStoryboardSegue) {
+        if let source = sender.source as? AddItemViewController, let task = source.task {
+            
+            // Add a new task.
+            let newIndexPath = IndexPath(row: tasks.count, section: 0)
+            
+            tasks.append(task)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
 }

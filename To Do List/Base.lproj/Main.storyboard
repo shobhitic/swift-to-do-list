@@ -102,10 +102,19 @@
                                 <action selector="cancel:" destination="xXA-yy-yhq" id="ijw-I8-m3D"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="euG-sn-mop"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="euG-sn-mop">
+                            <connections>
+                                <segue destination="wmB-uY-Cac" kind="unwind" unwindAction="unwindToTaskListWithSender:" id="BQB-qS-x21"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="euG-sn-mop" id="tVR-Aq-MfM"/>
+                        <outlet property="taskNameField" destination="oNJ-gb-weV" id="hSC-kF-eq0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F4Z-UK-xhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="wmB-uY-Cac" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2598" y="120"/>
         </scene>

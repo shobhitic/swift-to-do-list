@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import os.log
 
 class AddItemViewController: UIViewController {
-
+    @IBOutlet weak var taskNameField: UITextField!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    
+    var task: ToDoListItem?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,14 +31,26 @@ class AddItemViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        
+        os_log("In the Prepare function", log: OSLog.default, type: .debug)
+        
+        // Configure the destination view controller only when the save button is pressed.
+        guard let button = sender as? UIBarButtonItem, button === saveButton else {
+            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+            return
+        }
+        
+        task = ToDoListItem()
+        task?.name = taskNameField.text!
+        task?.completed = false
+        task?.save()
+        
+        
     }
-    */
 
 }

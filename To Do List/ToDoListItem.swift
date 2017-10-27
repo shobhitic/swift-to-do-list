@@ -40,9 +40,15 @@ class ToDoListItem: Object {
             }
         } else {
             try! realm.write {
+                id = incrementID()
                 realm.add(self)
             }
         }
+    }
+    
+    func incrementID() -> Int {
+        let realm = try! Realm()
+        return (realm.objects(ToDoListItem.self).max(ofProperty: "id") as Int? ?? 0) + 1
     }
     
     override static func primaryKey() -> String? {
