@@ -19,6 +19,7 @@
 		EE32B4DE1FA22B2100890892 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4DD1FA22B2100890892 /* ToDoListItem.swift */; };
 		EE32B4E21FA22E6700890892 /* ToDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4E11FA22E6700890892 /* ToDoListTableViewController.swift */; };
 		EE32B4E41FA240EC00890892 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE32B4E31FA240EC00890892 /* AddItemViewController.swift */; };
+		EE44065F1FA30B570053C194 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44065E1FA30B570053C194 /* ToDoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EE32B4DD1FA22B2100890892 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
 		EE32B4E11FA22E6700890892 /* ToDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListTableViewController.swift; sourceTree = "<group>"; };
 		EE32B4E31FA240EC00890892 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		EE44065E1FA30B570053C194 /* ToDoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		F7BEDC45918A363F4BFA40ED /* Pods-To Do List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-To Do List.release.xcconfig"; path = "Pods/Target Support Files/Pods-To Do List/Pods-To Do List.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				EE32B4BF1FA2243A00890892 /* Main.storyboard */,
 				EE32B4E31FA240EC00890892 /* AddItemViewController.swift */,
 				EE32B4DD1FA22B2100890892 /* ToDoListItem.swift */,
+				EE44065E1FA30B570053C194 /* ToDoList.swift */,
 				EE32B4DB1FA228B300890892 /* ToDoItemTableViewCell.swift */,
 				EE32B4C21FA2243A00890892 /* Assets.xcassets */,
 				EE32B4C41FA2243A00890892 /* LaunchScreen.storyboard */,
@@ -345,6 +348,7 @@
 				EE32B4BE1FA2243A00890892 /* MainViewController.swift in Sources */,
 				EE32B4E21FA22E6700890892 /* ToDoListTableViewController.swift in Sources */,
 				EE32B4DC1FA228B300890892 /* ToDoItemTableViewCell.swift in Sources */,
+				EE44065F1FA30B570053C194 /* ToDoList.swift in Sources */,
 				EE32B4DE1FA22B2100890892 /* ToDoListItem.swift in Sources */,
 				EE32B4BC1FA2243A00890892 /* AppDelegate.swift in Sources */,
 				EE32B4E41FA240EC00890892 /* AddItemViewController.swift in Sources */,

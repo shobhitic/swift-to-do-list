@@ -9,7 +9,7 @@
 import UIKit
 
 class ToDoListTableViewController: UITableViewController {
-    var tasks = [ToDoListItem]()
+    var tasks = ToDoList.allTasks()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,15 +19,6 @@ class ToDoListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        var task = ToDoListItem()
-        task.name = "Brush Teeth"
-        task.completed = false
-        tasks.append(task)
-        
-        task = ToDoListItem()
-        task.name = "Take a dump"
-        task.completed = true
-        tasks.append(task)
     }
 
     override func didReceiveMemoryWarning() {
