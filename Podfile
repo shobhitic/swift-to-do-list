@@ -7,6 +7,8 @@ target 'To Do List' do
 
   # Pods for To Do List
 
+  pod 'RealmSwift'
+
   target 'To Do ListTests' do
     inherit! :search_paths
     # Pods for testing

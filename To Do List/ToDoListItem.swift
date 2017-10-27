@@ -7,15 +7,45 @@
 //
 
 import Foundation
+import RealmSwift
+import Realm
 
-class ToDoListItem {
+
+class ToDoListItem: Object {
     //MARK: Properties
-    var name: String
-    var completed: Bool
+    @objc dynamic var id = 0
+    @objc dynamic var name: String = ""
+    @objc dynamic var completed: Bool = false
     
     //MARK: Initialization
-    init(name: String) {
-        self.name = name
-        self.completed = false
+    required init() {
+        super.init()
+    }
+    
+    required init(value: Any, schema: RLMSchema) {
+        super.init(value: value, schema: schema)
+    }
+    
+    required init(realm: RLMRealm, schema: RLMObjectSchema) {
+        super.init(realm: realm, schema: schema)
+    }
+    
+    //MARK: DB Operations
+    func save() {
+        let realm = try! Realm()
+        
+        if id > 0 {
+            try! realm.write {
+                realm.add(self, update: true)
+            }
+        } else {
+            try! realm.write {
+                realm.add(self)
+            }
+        }
+    }
+    
+    override static func primaryKey() -> String? {
+        return "id"
     }
 }
