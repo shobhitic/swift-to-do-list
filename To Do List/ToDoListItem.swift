@@ -13,6 +13,7 @@ class ToDoListItem {
     var name: String
     var completed: Bool
     
+    //MARK: Initialization
     init(name: String) {
         self.name = name
         self.completed = false
