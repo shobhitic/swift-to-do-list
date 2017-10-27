@@ -34,19 +34,29 @@ class ToDoListItem: Object {
     func save() {
         let realm = try! Realm()
         
-        if id > 0 {
-            try! realm.write {
+        try! realm.write {
+            id = getId()
+            if id > 0 {
                 realm.add(self, update: true)
-            }
-        } else {
-            try! realm.write {
-                id = incrementID()
+            } else {
                 realm.add(self)
             }
         }
     }
     
-    func incrementID() -> Int {
+    func updateCompleted(completed: Bool) {
+        let realm = try! Realm()
+        try! realm.write {
+            self.completed = completed
+        }
+    }
+    
+    //MARK: ID Operations
+    func getId() -> Int {
+        if id > 0 {
+            return id
+        }
+        
         let realm = try! Realm()
         return (realm.objects(ToDoListItem.self).max(ofProperty: "id") as Int? ?? 0) + 1
     }

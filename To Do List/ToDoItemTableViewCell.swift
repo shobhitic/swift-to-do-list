@@ -37,7 +37,7 @@ class ToDoItemTableViewCell: UITableViewCell {
     @objc func taskCompleted(completeSwitch: UISwitch) {
         let isCompelete = completeSwitch.isOn
         // Do something
-        task?.completed = isCompelete
+        task?.updateCompleted(completed: isCompelete)
     }
 
 }
