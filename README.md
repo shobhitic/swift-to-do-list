@@ -6,9 +6,9 @@ It uses [Realm](https://realm.io/) as its database for persisting data.
 
 # Building and Running the app
 
-To get started, first clone the app, open the `cd` in to the folder and run `pod install`. Make sure you have [CocoaPods installed](https://cocoapods.org/#install) before running `pod install`.
+To get started, first clone the app, open the `$ cd` in to the folder and run `$ pod install`. Make sure you have [CocoaPods installed](https://cocoapods.org/#install) before running `$ pod install`.
 
-Locate the folder in Finder and open the `To Do List.xcworkspace` in XCode. If `pod install` succeeded, and you opened the correct project, everything should work and you will be greeted with an empty screen with no tasks in the app.
+Locate the folder in Finder and open the `To Do List.xcworkspace` in XCode. If `$ pod install` succeeded, and you opened the correct project, everything should work and you will be greeted with an empty screen with no tasks in the app.
 
 <img src="screenshots/screen1.png" width="300">
 
