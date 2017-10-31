@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class AddItemViewController: UIViewController {
+class AddItemViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var taskNameField: UITextField!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
@@ -19,6 +19,8 @@ class AddItemViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        taskNameField.delegate = self
+        updateSaveButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,7 +32,17 @@ class AddItemViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-
+    // MARK: UITextFieldDelegate methods
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        updateSaveButton()
+    }
+    
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard.
+        textField.resignFirstResponder()
+        return true
+    }
     
     // MARK: - Navigation
 
@@ -49,8 +61,13 @@ class AddItemViewController: UIViewController {
         task?.name = taskNameField.text!
         task?.completed = false
         task?.save()
-        
-        
+    }
+    
+    // MARK: Private methods
+    
+    func updateSaveButton() {
+        let text = taskNameField.text ?? ""
+        saveButton.isEnabled = !text.isEmpty
     }
 
 }
