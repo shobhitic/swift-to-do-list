@@ -27,7 +27,7 @@ Tap the left side of task to change its state to completed.
 # TO DO (pun intended)
 
 1. Change the Switch appearance to use the assets.
-2. Add text validation for name to have at least one character.
+2. **[DONE]** Add text validation for name to have at least one character.
 
 # License
 
